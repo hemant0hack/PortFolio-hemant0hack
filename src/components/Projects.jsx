@@ -2,11 +2,11 @@ import { motion } from "framer-motion"
 
 const projects = [
   {
-    title: "Personal Portfolio",
-    description: "Modern portfolio website built with React, Tailwind CSS, and Framer Motion. Features responsive design and smooth animations.",
-    image: "/images/portfolio.jpg",
+    title: "Hospital Management System",
+    description: "Hospital Management System this system is works to managing patient, doctor record and appointments scheduled ",
+    image: ".jpg",
     liveLink: "https://hemant0hack.github.io",
-    repoLink: "https://github.com/hemant0hack/PortFolio-hemant0hack-",
+    repoLink: "https://github.com/hemant0hackHospital-Management-System ",
   },
   {
     title: "Task Manager",
