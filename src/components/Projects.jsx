@@ -3,24 +3,24 @@ import { motion } from "framer-motion"
 const projects = [
   {
     title: "Hospital Management System",
-    description: "Hospital Management System this system is works to managing patient, doctor record and appointments scheduled ",
-    image: "src/assets/1.png",
-   
+    description: "The Hospital Management System is designed to streamline the operations of a hospital. It helps in managing patient, doctor, appointments informations, medical records, and other administrative tasks.",
+    image: "src/assets/project1.png",
+    liveLink: "", // Add a live link if available, else leave as empty string
     repoLink: "https://github.com/hemant0hack/Hospital-Management-System",
   },
   {
-    title: "Task Manager",
-    description: "A full-stack task management application built with React, Node.js, and MongoDB. Features user authentication and real-time updates.",
-    image: "/images/taskmanager.jpg",
-    liveLink: "https://task-manager-hemant.herokuapp.com",
-    repoLink: "https://github.com/hemant0hack/task-manager",
+    title: "Smart Home IoT System",
+    description: "An advanced ESP32-based smart home automation system leveraging MQTT and ThingsBoard for seamless real-time control, monitoring, and dashboard integration.",
+    image: "src/assets/project2.png",
+    liveLink: "https://wokwi.com/projects/427608480870411265",
+    repoLink: "https://github.com/hemant0hack/Smart-Home-IoT-System",
   },
   {
-    title: "Weather App",
-    description: "Real-time weather application built with React and OpenWeatherMap API. Features location-based weather data and 5-day forecast.",
-    image: "/images/weatherapp.jpg",
-    liveLink: "https://weather-app-hemant.netlify.app",
-    repoLink: "https://github.com/hemant0hack/weather-app",
+    title: "Smart Indoor Energy Optimization",
+    description: "The Smart Indoor Energy Optimization system aims to reduce unnecessary energy usage in indoor environments by intelligently controlling lighting, temperature, and electrical appliances using sensors, actuators, and an ESP32 microcontroller integrated with ThingsBoard via MQTT.",
+    image: "src/assets/project3.png", 
+    liveLink: "https://wokwi.com/projects/429018053918405633",
+    repoLink: "https://github.com/hemant0hack/Smart-Indoor-Energy-Optimization",
   },
 ]
 

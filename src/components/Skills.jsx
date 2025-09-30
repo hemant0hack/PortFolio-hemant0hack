@@ -1,46 +1,77 @@
-import { motion } from "framer-motion"
+import { motion } from "framer-motion";
+import { FaReact } from "react-icons/fa";
+import {
+  SiJavascript,
+  SiPython,
+  SiC,
+  SiHtml5,
+  SiCss3,
+  SiCplusplus,
+  SiPandas,
+} from "react-icons/si";
 
 const skills = [
-  { name: "React", level: "90%" },
-  { name: "JavaScript", level: "85%" },
-  { name: "Tailwind CSS", level: "95%" },
-  { name: "Node.js", level: "75%" },
-  { name: "Figma", level: "80%" },
-]
+  { name: "HTML", icon: <SiHtml5 className="text-orange-500" /> },
+  { name: "CSS", icon: <SiCss3 className="text-blue-400" /> },
+  { name: "JavaScript", icon: <SiJavascript className="text-yellow-400" /> },
+  { name: "React", icon: <FaReact className="text-cyan-400" /> },
+  { name: "C Programming", icon: <SiC className="text-blue-500" /> },
+  { name: "C++", icon: <SiCplusplus className="text-blue-700" /> },
+  { name: "Python", icon: <SiPython className="text-yellow-300" /> },
+  { name: "Pandas", icon: <SiPandas className="text-blue-600" /> },
+];
+
+const containerVariants = {
+  hidden: { opacity: 0 },
+  visible: {
+    opacity: 1,
+    transition: {
+      staggerChildren: 0.15,
+    },
+  },
+};
+
+const itemVariants = {
+  hidden: { opacity: 0, y: 20 },
+  visible: { opacity: 1, y: 0 },
+};
 
 function Skills() {
   return (
-    <section id="skills" className="py-20 px-8 bg-gray-900">
-      <div className="max-w-4xl mx-auto">
-        <motion.h2 
+    <section id="skills" className="py-20 px-4 sm:px-8 bg-gray-900 text-white">
+      <div className="max-w-5xl mx-auto">
+        <motion.h2
           initial={{ opacity: 0, y: -50 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 1 }}
-          className="text-4xl font-bold text-center mb-12"
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.8, ease: "easeOut" }}
+          className="text-4xl md:text-5xl font-bold text-center mb-16"
         >
           My Skills
         </motion.h2>
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-          {skills.map((skill, index) => (
-            <motion.div 
-              key={index}
-              initial={{ opacity: 0, x: -50 }}
-              animate={{ opacity: 1, x: 0 }}
-              transition={{ duration: 0.5, delay: index * 0.2 }}
-              className="bg-gray-800 p-6 rounded-lg"
+        <motion.div
+          variants={containerVariants}
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true, amount: 0.3 }}
+          className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-8"
+        >
+          {skills.map((skill) => (
+            <motion.div
+              key={skill.name}
+              variants={itemVariants}
+              whileHover={{ scale: 1.05, y: -5 }}
+              transition={{ type: "spring", stiffness: 300 }}
+              className="bg-gray-800 p-6 rounded-xl shadow-lg hover:shadow-cyan-500/20 flex flex-col items-center justify-center gap-3"
             >
-              <div className="flex justify-between items-center mb-2">
-                <h3 className="text-xl font-semibold">{skill.name}</h3>
-                <span className="text-cyan-400">{skill.level}</span>
-              </div>
-              <div className="w-full bg-gray-700 rounded-full h-2.5">
-                <div className="bg-cyan-400 h-2.5 rounded-full" style={{ width: skill.level }}></div>
-              </div>
+              <div className="text-4xl">{skill.icon}</div>
+              <h3 className="text-md font-semibold text-center">{skill.name}</h3>
             </motion.div>
           ))}
-        </div>
+        </motion.div>
       </div>
     </section>
-  )
+  );
 }
-export default Skills
+
+export default Skills;
