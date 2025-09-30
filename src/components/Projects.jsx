@@ -4,9 +4,9 @@ const projects = [
   {
     title: "Hospital Management System",
     description: "Hospital Management System this system is works to managing patient, doctor record and appointments scheduled ",
-    image: ".jpg",
-    liveLink: "https://hemant0hack.github.io",
-    repoLink: "https://github.com/hemant0hackHospital-Management-System ",
+    image: "src/assets/1.png",
+   
+    repoLink: "https://github.com/hemant0hack/Hospital-Management-System",
   },
   {
     title: "Task Manager",
