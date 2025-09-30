@@ -4,21 +4,21 @@ const projects = [
   {
     title: "Hospital Management System",
     description: "A system to streamline hospital operations, managing patient data, appointments, and medical records efficiently.",
-    image: "src/assets/project1.png",
+    image: "project1.png",
     liveLink: "", // Add a live link if available, else leave as empty string
     repoLink: "https://github.com/hemant0hack/Hospital-Management-System",
   },
   {
     title: "Smart Home IoT System",
     description: "An ESP32-based smart home system using MQTT and ThingsBoard for real-time control, monitoring, and dashboard integration.",
-    image: "src/assets/project2.png",
+    image: "project2.png",
     liveLink: "https://wokwi.com/projects/427608480870411265",
     repoLink: "https://github.com/hemant0hack/Smart-Home-IoT-System",
   },
   {
     title: "Smart Indoor Energy Optimization",
     description: "An intelligent system to reduce energy usage by controlling lights and appliances with sensors and an ESP32 integrated with ThingsBoard.",
-    image: "src/assets/project3.png", 
+    image: "project3.png", 
     liveLink: "https://wokwi.com/projects/429018053918405633",
     repoLink: "https://github.com/hemant0hack/Smart-Indoor-Energy-Optimization",
   },
