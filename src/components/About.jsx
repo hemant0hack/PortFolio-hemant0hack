@@ -40,7 +40,7 @@ function About() {
           >
             <div className="relative group">
               <img
-                src="Hemant.jpg"
+                src="\Hemant.jpg"
                 alt="Hemant"
                 className="rounded-full shadow-2xl border-4 border-blue-400 w-52 h-52 object-cover transition-transform duration-300 group-hover:scale-105"
                 loading="lazy"
