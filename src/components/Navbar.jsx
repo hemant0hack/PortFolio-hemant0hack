@@ -53,7 +53,7 @@ function Navbar() {
 
   return (
     <nav className="flex justify-between items-center px-8 py-4 bg-gray-900 shadow-md fixed w-full z-50 transition-all duration-300">
-      <a href="#home" onClick={(e) => handleNavClick(e, 'home')} className="text-2xl font-bold text-cyan-400">MyPortfolio</a>
+      <a href="#home" onClick={(e) => handleNavClick(e, 'home')} className="text-2xl font-bold text-cyan-400">Welcome to My Portfolio</a>
       <div className="hidden md:flex gap-6">
         {navLinks.map(link => (
           <a

@@ -42,8 +42,7 @@ function Hero() {
       <motion.h1 
         variants={itemVariants}
         className="text-5xl md:text-7xl font-extrabold"
-      >
-        Hi, I’m <span className="text-cyan-400">Hemant</span> 👋
+      >  Hi, I’m <span className="text-cyan-400">Hemant Rathore</span> 👋
       </motion.h1>
       <motion.p 
         variants={itemVariants}

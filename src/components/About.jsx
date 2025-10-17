@@ -62,7 +62,7 @@ function About() {
             className="md:w-2/3"
           >
             <p className="text-xl text-gray-200 leading-relaxed mb-4">
-              Hi! I'm <span className="font-semibold text-blue-400">Hemant</span>, a passionate developer who loves crafting beautiful and performant web experiences. My expertise lies in modern front-end technologies, and I thrive on transforming ideas into interactive, user-friendly applications.
+              Hi! I'm <span className="font-semibold text-blue-400">Hemant Rathore</span>, a passionate developer who loves crafting beautiful and performant web experiences. My expertise lies in modern front-end technologies, and I thrive on transforming ideas into interactive, user-friendly applications.
             </p>
             <ul className="mt-4 space-y-2 text-gray-300 text-lg list-disc list-inside">
               <li>
@@ -105,6 +105,14 @@ function About() {
                 className="bg-gray-800 hover:bg-gray-700 text-gray-200 px-5 py-2 rounded-full font-semibold shadow transition border border-gray-600"
               >
                 GitHub
+              </a>
+              <a
+                href="https://linkedin.com/in/hemant0hack"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="bg-gray-800 hover:bg-gray-700 text-gray-200 px-5 py-2 rounded-full font-semibold shadow transition border border-gray-600"
+              >
+                LikedIn
               </a>
             </div>
           </motion.div>
