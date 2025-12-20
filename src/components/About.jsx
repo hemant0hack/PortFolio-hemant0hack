@@ -4,7 +4,7 @@ function About() {
   return (
     <section
       id="about"
-      className="py-28 px-6 bg-gradient-to-b from-gray-900 via-gray-800 to-gray-900 relative overflow-hidden"
+      className="py-28 px-6 bg-black-to-b from-black-900 via-gray-800 to-gray-900 relative overflow-hidden"
     >
       {/* Decorative background shapes */}
       <motion.div
